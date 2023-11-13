@@ -29,10 +29,9 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 lg:text-lg"
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-              qui quidem corrupti perferendis sunt!
+              Here are some of my elaborate projects
             </motion.p>
           </div>
           {/* slider */}

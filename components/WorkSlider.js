@@ -5,40 +5,46 @@ export const workSlider = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/fortunecookie.jpg",
+          description:"Try your luck and discover your phrase",
+          icon: "",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/galaxyphrase.jpg",
+          description:"",
+          icon: "",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/buycart.jpg",
+          description:"",
+          icon: "",
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/rick and morty.jpg",
+          description:"",
+          icon: "",
         },
+        
       ],
     },
     {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/pokedex.jpg",
+          description:"",
+          icon: "",
         },
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/weatherapp.jpg",
+          description:"",
+          icon: "",
         },
-        {
-          title: "title",
-          path: "/thumb2.jpg",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-        },
+        
       ],
     },
   ],
@@ -82,12 +88,12 @@ const WorkSlider = () => {
                   >
                     <div className="flex items-center justify-center relative overflow-hidden group ">
                       {/* image */}
-                      <Image src={image.path} width={500} height={300} alt="" />
+                      <Image className=" w-[150px] h-[80px] md:w-[150px] md:h-[80px] lg:w-[300px] lg:h-[150px] xl:w-[300px] xl:h-[150px]" src={image.path} width={500} height={300} alt="" />
                       {/* overlay gradient  */}
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       {/* title */}
-                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300 ">
-                        <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em] ">
+                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-10 transition-all duration-300 ">
+                        <div className="flex items-center gap-x-2 text-[10px] md:text-[13px] tracking-[0.2em] ">
                           {/* title part 1 */}
                           <div className="delay-100">LIVE</div>
                           {/* title part 2 */}
@@ -99,6 +105,7 @@ const WorkSlider = () => {
                             <BsArrowRight />
                           </div>
                         </div>
+                        <div className="text-primary/80">{image.description}</div>
                       </div>
                     </div>
                   </div>
