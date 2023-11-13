@@ -37,7 +37,7 @@ const Contact = () => {
             {/* input group */}
             <div className="flex gap-x-6 w-full">
               <input type="text" placeholder="name" className="input" />
-              <input type="text" placeholder="email" className="input" />
+              <input type="email" placeholder="email" className="input" />
             </div>
             <input type="text" placeholder="subject" className="input" />
             <textarea placeholder="message" className="textarea"></textarea>
