@@ -12,19 +12,19 @@ export const workSlider = {
         {
           title: "title",
           path: "/galaxyphrase.jpg",
-          description:"",
+          description:"Learn relevant phrases about the universe",
           icon: "",
         },
         {
           title: "title",
           path: "/buycart.jpg",
-          description:"",
+          description:"Add products to your shopping cart",
           icon: "",
         },
         {
           title: "title",
-          path: "/rick and morty.jpg",
-          description:"",
+          path: "/rickandmorty.jpg",
+          description:"Browse through each resident's dimensions",
           icon: "",
         },
         
@@ -35,13 +35,13 @@ export const workSlider = {
         {
           title: "title",
           path: "/pokedex.jpg",
-          description:"",
+          description:"Get to know the details of each Pokémon",
           icon: "",
         },
         {
           title: "title",
           path: "/weatherapp.jpg",
-          description:"",
+          description:"Know the weather in your city and elsewhere",
           icon: "",
         },
         
@@ -105,7 +105,7 @@ const WorkSlider = () => {
                             <BsArrowRight />
                           </div>
                         </div>
-                        <div className="text-primary/80">{image.description}</div>
+                        <div className="text-primary/80 text-[9px] xl:text-[13px] ">{image.description}</div>
                       </div>
                     </div>
                   </div>
