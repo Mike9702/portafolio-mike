@@ -48,4 +48,10 @@
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
+
+.bgImagesLinks{
+  background-color: #107185;
+  background-image: linear-gradient(270deg, #107185 0%, #440163 100%);
+}
+
 }

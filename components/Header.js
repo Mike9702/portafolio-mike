@@ -10,15 +10,11 @@ const Header = () => {
   return (
     <header className="absolute z-30 w-full flex items-center px-16 xl:px-0 lg:h-[90px]">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row lg:gap-x-9 lg:justify-between items-center gap-y-3 py-5 bottom-2  lg:px-8">
+        <div className="flex flex-col lg:flex-row lg:gap-x-9 lg:justify-between items-center gap-y-3 py-5 bottom-2  lg:px-2">
           {/* logo */}
           <Link href={"/"}>
-            <div className=" w-[auto] h-[auto] flex justify-center items-center rounded-xl shadow-sm hover:shadow-accent hover:bg-white/5 backdrop-blur-md transition-all duration-500">
-              <h1 className="font-semibold text-2xl lg:text-4xl font-sora px-2">
-                {" "}
-                <span className="text-accent animate-pulse">{'<'}</span> Mike M{" "}
-                <span className="text-accent animate-pulse">{'/>'}</span>
-              </h1>
+            <div className=" w-[auto] h-[auto] flex justify-center items-center rounded-xl  hover:animate-pulse transition-all duration-500">
+              <img src="/logodevmike.svg" alt="" className="w-16 h-12  sm:w-28 xl:h-24" />
             </div>
           </Link>
           {/* socials */}

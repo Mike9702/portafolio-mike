@@ -7,25 +7,25 @@ export const workSlider = {
           title: "title",
           path: "/fortunecookie.jpg",
           description:"Try your luck and discover your phrase",
-          icon: "",
+          link: "https://fortune-cookies1-miguel-martinez.netlify.app/",
         },
         {
           title: "title",
           path: "/galaxyphrase.jpg",
           description:"Learn relevant phrases about the universe",
-          icon: "",
+          link: "https://galaxy-phraces.netlify.app/",
         },
         {
           title: "title",
           path: "/buycart.jpg",
           description:"Add products to your shopping cart",
-          icon: "",
+          link: "https://mike-cart.netlify.app/",
         },
         {
           title: "title",
           path: "/rickandmorty.jpg",
           description:"Browse through each resident's dimensions",
-          icon: "",
+          link: "https://rick-and-morty-mike.netlify.app/",
         },
         
       ],
@@ -36,13 +36,13 @@ export const workSlider = {
           title: "title",
           path: "/pokedex.jpg",
           description:"Get to know the details of each Pokémon",
-          icon: "",
+          link: "https://pokedex-mike.netlify.app/",
         },
         {
           title: "title",
           path: "/weatherapp.jpg",
           description:"Know the weather in your city and elsewhere",
-          icon: "",
+          link: "https://weather-app-mik.netlify.app/",
         },
         
       ],
@@ -65,6 +65,7 @@ import { Pagination } from "swiper";
 import { BsArrowRight } from "react-icons/bs";
 // next image
 import Image from "next/image";
+import Link from "next/link";
 
 const WorkSlider = () => {
   return (
@@ -86,13 +87,14 @@ const WorkSlider = () => {
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group shadow-md"
                     key={index}
                   >
-                    <div className="flex items-center justify-center relative overflow-hidden group ">
+                    <Link href={image.link} >
+                    <div className="flex items-center  justify-center relative overflow-hidden group ">
                       {/* image */}
                       <Image className=" w-[150px] h-[80px] md:w-[150px] md:h-[80px] lg:w-[300px] lg:h-[150px] xl:w-[300px] xl:h-[150px]" src={image.path} width={500} height={300} alt="" />
                       {/* overlay gradient  */}
-                      <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
+                      <div className="absolute inset-0 bgImagesLinks opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       {/* title */}
-                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-10 transition-all duration-300 ">
+                      <div className="absolute bottom-0 px-1 translate-y-full group-hover:-translate-y-5 group-hover:xl:-translate-y-10 transition-all duration-300 ">
                         <div className="flex items-center gap-x-2 text-[10px] md:text-[13px] tracking-[0.2em] ">
                           {/* title part 1 */}
                           <div className="delay-100">LIVE</div>
@@ -105,13 +107,15 @@ const WorkSlider = () => {
                             <BsArrowRight />
                           </div>
                         </div>
-                        <div className="text-primary/80 text-[9px] xl:text-[13px] ">{image.description}</div>
+                        <div className="text-white text-[9px] xl:text-[13px] ">{image.description}</div>
                       </div>
                     </div>
+                    </Link>
                   </div>
                 );
               })}
             </div>
+            
           </SwiperSlide>
         );
       })}

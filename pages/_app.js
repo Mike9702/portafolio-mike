@@ -1,5 +1,7 @@
 import "../styles/globals.css";
 
+
+
 //comopnents
 import Layout from "../components/Layout";
 import Transition from "../components/Transition";
@@ -14,6 +16,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <Layout>
+     
       <AnimatePresence mode="wait">
         <motion.div key={router.route} className="h-full">
           <Transition />
