@@ -13,8 +13,8 @@ const Header = () => {
         <div className="flex flex-col lg:flex-row lg:gap-x-9 lg:justify-between items-center gap-y-3 py-5 bottom-2  lg:px-2">
           {/* logo */}
           <Link href={"/"}>
-            <div className=" w-[auto] h-[auto] flex justify-center items-center rounded-xl  hover:animate-pulse transition-all duration-500">
-              <img src="/logodevmike.svg" alt="" className="w-16 h-12  sm:w-28 xl:h-24" />
+            <div className="flex justify-center items-center rounded-xl  hover:animate-pulse transition-all duration-500">
+              <h1 className="sm:text-2xl">Mike Martinez <span className="text-accent sm:text-3xl">.</span></h1>
             </div>
           </Link>
           {/* socials */}

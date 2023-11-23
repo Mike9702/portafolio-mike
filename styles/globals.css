@@ -39,7 +39,7 @@
     @apply h-[52px];
   }
   .input {
-    @apply w-full h-[52px] rounded-lg pl-6 capitalize;
+    @apply w-full h-[52px] rounded-lg pl-6 ;
   }
   .input,
   .textarea {
@@ -50,8 +50,8 @@
   }
 
 .bgImagesLinks{
-  background-color: #107185;
-  background-image: linear-gradient(270deg, #107185 0%, #440163 100%);
+  background-color: rgb(9, 4, 79);
+  background-image: linear-gradient(270deg, #14086c 0%, #440163 100%);
 }
 
 }

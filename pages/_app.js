@@ -2,6 +2,9 @@ import "../styles/globals.css";
 
 
 
+// pages/_app.js
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+
 //comopnents
 import Layout from "../components/Layout";
 import Transition from "../components/Transition";
@@ -14,9 +17,8 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  return (
+  return ( 
     <Layout>
-     
       <AnimatePresence mode="wait">
         <motion.div key={router.route} className="h-full">
           <Transition />
@@ -24,6 +26,7 @@ function MyApp({ Component, pageProps }) {
         </motion.div>
       </AnimatePresence>
     </Layout>
+   
   );
 }
 
