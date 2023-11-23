@@ -40,7 +40,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm lg:max-w-xl mx-auto lg:mx-0 mb-8 lg:mb-16 lg:text-xl"
           >
-            I'm ready to create what you need
+            I'm ready to create your website 
           </motion.p>
           {/* btn */}
           <motion.div
@@ -64,7 +64,7 @@ const Home = () => {
         </div>
       </div>
       {/* image */}
-      <div className=" hidden xl:flex absolute  w-[800px] h-full  right-0 bottom-0 ">
+      <div className=" hidden xl:flex absolute  w-[70%] h-full  right-0 bottom-0 ">
         {/* bg image */}
         <div className=" bg-none  xl:bg-explosion xl:bg-cover xl:bg-right xl-bg-no-repeat w-full h-full absolute mix-blend-color-dodge "></div>
         {/* particles */}
