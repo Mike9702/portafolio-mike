@@ -8,7 +8,7 @@ class MyDocument extends Document {
         <Head>
           {/* Agrega el enlace al favicon */}
           <title>Mike Portfolio</title>
-          <link rel="favicon" href="/favicon.ico"/>
+          <link rel="favicon" href="favicon.ico"/>
           {/* Otros metadatos, estilos, etc. */}
         </Head>
         <body>
