@@ -5,6 +5,7 @@ import Link from "next/link";
 
 // comopnents
 import Socials from "../components/Socials";
+import Nav from "../components/Nav";
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
           {/* logo */}
           <Link href={"/"}>
             <div className="flex justify-center items-center rounded-xl  hover:animate-pulse transition-all duration-500">
-              <h1 className="sm:text-2xl">Mike Martinez <span className="text-accent sm:text-3xl">.</span></h1>
+              <h2 className="sm:h2 text-center ">Mike Martinez <span className="text-accent sm:text-3xl">.</span></h2>
             </div>
           </Link>
           {/* socials */}

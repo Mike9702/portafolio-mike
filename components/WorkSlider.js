@@ -7,20 +7,7 @@ export const workSlider = {
   slides: [
     {
       images: [
-        {
-          title: "title",
-          path: "/fortunecookie.jpg",
-          description: "Try your luck and discover your phrase",
-          link: "https://fortune-cookies1-miguel-martinez.netlify.app/",
-          icons: [<FaJs />, <FaReact />, <SiTailwindcss />],
-        },
-        {
-          title: "title",
-          path: "/galaxyphrase.jpg",
-          description: "Learn relevant phrases about the universe",
-          link: "https://galaxy-phraces.netlify.app/",
-          icons: [<FaJs />, <FaReact />, <SiTailwindcss />],
-        },
+        
         {
           title: "title",
           path: "/buycart.jpg",
@@ -35,10 +22,6 @@ export const workSlider = {
           link: "https://rick-and-morty-mike.netlify.app/",
           icons: [<FaJs />, <FaReact />, <SiTailwindcss />],
         },
-      ],
-    },
-    {
-      images: [
         {
           title: "title",
           path: "/pokedex.jpg",
@@ -55,6 +38,11 @@ export const workSlider = {
         },
       ],
     },
+    // {
+    //   images: [
+        
+    //   ],
+    // },
   ],
 };
 
@@ -88,7 +76,7 @@ const WorkSlider = () => {
       {workSlider.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer  ">
+            <div className="grid grid-cols-2 gap-4 cursor-pointer  ">
               {slide.images.map((image, index) => {
                 return (
                   <div
@@ -97,7 +85,7 @@ const WorkSlider = () => {
                   >
                     <Link href={image.link} target="_blank">
                       <link rel="stylesheet" href="" />
-                      <div className="flex items-center  justify-center relative overflow-hidden group ">
+                      <div className="flex items-center rounded-md  justify-center relative overflow-hidden group ">
                         {/* image */}
                         <Image
                           className=" w-[150px] h-[80px] md:w-[150px] md:h-[80px] lg:w-[300px] lg:h-[150px] xl:w-[300px] xl:h-[150px]"
@@ -109,10 +97,10 @@ const WorkSlider = () => {
                         {/* overlay gradient  */}
                         <div className="absolute inset-0 bgImagesLinks opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                         {/* title */}
-                        <div className="absolute bottom-0 px-1 translate-y-full group-hover:-translate-y-2 group-hover:xl:-translate-y-10 transition-all duration-300 ">
+                        <div className="absolute bottom-0 px-1 translate-y-full group-hover:-translate-y-1 sm:group-hover:-translate-y-10 group-hover:xl:-translate-y-10 transition-all duration-300 ">
                           <div className="flex items-center gap-x-2 text-[10px] md:text-[13px] tracking-[0.2em] ">
                             {/* title part 1 */}
-                            <div className="delay-100">LIVE</div>
+                            <div className="delay-100">GO TO</div>
                             {/* title part 2 */}
                             <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
                               PROJECT

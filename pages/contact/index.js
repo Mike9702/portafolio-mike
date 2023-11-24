@@ -2,6 +2,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+import Swal from "sweetalert2";
+
 // components
 import Circles from "/components/Circles";
 
@@ -29,8 +31,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          alert("tu mensaje ha sido enviado, me contactaré contigo lo mas pronto posible");
-          form.current.reset()
+          Swal.fire({
+            text: "Successful shipment, I will contact you as soon as possible",
+            icon: "success",
+            confirmButtonText: "Ok",
+          });
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -59,21 +65,44 @@ const Contact = () => {
             animate="show"
             exit="hidden"
             className="flex-1 flex flex-col gap-6 w-full mx-auto"
-            ref={form} onSubmit={sendEmail}
+            ref={form}
+            onSubmit={sendEmail}
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
-              <input type="text" name="user_name" placeholder="name" autoComplete="off" className="input" />
-              <input type="email"name="user_email" placeholder="email" autoComplete="off" className="input" />
+              <input
+                type="text"
+                name="user_name"
+                required
+                placeholder="name"
+                autoComplete="off"
+                className="input capitalize"
+              />
+              <input
+                type="email"
+                name="user_email"
+                required
+                placeholder="email"
+                autoComplete="off"
+                className="input"
+              />
             </div>
-            <textarea placeholder="message" name="message" className="textarea"></textarea>
-            <button type="submit" value="Send" className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+            <textarea
+              placeholder="message"
+              name="message"
+              required
+              className="textarea"
+            ></textarea>
+            <button
+              type="submit"
+              value="Send"
+              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+            >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let's talk
               </span>
               <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all divide-blue-300 absolute text-[22px]" />
             </button>
-           
           </motion.form>
         </div>
       </div>

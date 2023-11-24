@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .translate-z-0 {
-  transform: translateZ(0px);
+  transform:translateZ(0px);
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
@@ -46,7 +46,7 @@
     @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
   .textarea {
-    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
+    @apply w-full h-[180px] p-6  rounded-lg resize-none;
   }
 
 .bgImagesLinks{
